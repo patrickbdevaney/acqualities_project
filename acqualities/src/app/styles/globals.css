@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+    @apply min-h-screen bg-gray-50;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-gray-100 rounded;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-teal-600 rounded hover:bg-teal-700;
+}
+
+input,
+button {
+    @apply transition-all duration-200;
+}
