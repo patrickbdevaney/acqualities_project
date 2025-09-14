@@ -253,8 +253,8 @@ export default function Page() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-50 to-teal-100 flex flex-col items-center p-4 sm:p-6">
       <header className="text-center mb-8">
-        <h1 className="text-4xl sm:text-5xl font-extrabold text-teal-800 tracking-tight">AquaQual Chat</h1>
-        <p className="text-lg text-gray-600 mt-2">Explore South Florida's climate risks with AI-powered insights</p>
+        <h1 className="text-4xl sm:text-5xl font-extrabold text-teal-800 tracking-tight">Acqualities</h1>
+        <p className="text-lg text-gray-600 mt-2">Explore hyperlocal climate risks for global cities with AI-powered insights</p>
       </header>
 
       <div className="w-full max-w-6xl flex flex-col gap-6">
@@ -278,10 +278,10 @@ export default function Page() {
             {history.map((msg, i) => (
               <div key={i} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                 <div className={`max-w-[90%] p-4 rounded-lg shadow-sm transition-all duration-200 ${msg.role === 'user'
-                    ? 'bg-teal-600 text-white'
-                    : msg.role === 'system'
-                      ? 'bg-yellow-100 text-gray-800 italic'
-                      : 'bg-gray-50 text-gray-800 border border-gray-200'
+                  ? 'bg-teal-600 text-white'
+                  : msg.role === 'system'
+                    ? 'bg-yellow-100 text-gray-800 italic'
+                    : 'bg-gray-50 text-gray-800 border border-gray-200'
                   }`}>
                   <div className="markdown-content max-w-none">
                     <ReactMarkdown
